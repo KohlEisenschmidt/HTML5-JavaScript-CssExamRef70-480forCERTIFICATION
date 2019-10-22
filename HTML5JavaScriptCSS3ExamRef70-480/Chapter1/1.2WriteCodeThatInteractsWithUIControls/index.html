@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+
+    <br>
+    <p>Press Ctrl+U to see HTML page source</p>
+    <br>
+
+
+    <p>The <strong>Document Object Model or DOM</strong> is a representation of the structure of your HTML <br>
+        page you can interact with programmatically. The DOM's application programming interface (API) is exposed as<br>
+        objects with properties and methods, enabling you to wright js code ot interact with teh HTML elements rendered
+        on the page. </p>
+
+    <p>To work with the DOM you need to be able to know how to access it and obtain references to the elements you want
+        to
+        manipulate.</p>
+
+    <p>NOTE: The DOM is essentially a collection of nodes arranged in a tree. All the nodes are related to each other.
+        <br>
+        They are on big happy family of children, siblings, parents, grandparents, grandchildren, and so on. This
+        essence of <br>
+        a family tree represents the hierarchy of the DOM and is important to understand as you manipulate the DOM
+        through code.</p>
+
+    <p>You can access DOM elements through a global object provided by the browser, called, <i>document</i>, or through
+        <br>
+        elements themselves after you obtain a reference to one.</p>
+
+    <table>
+        <th>
+            <tr>
+                <td><strong>Method</strong></td>
+                <td><strong>Usage</strong></td>
+            </tr>
+        </th>
+
+        <tbody>
+            <tr>
+                <td><i>getElementById</i></td>
+                <td>Gets the individual element on the page by its unique id attribute value</td>
+            </tr>
+            <tr>
+                <td><i>getElementByClassName</i></td>
+                <td>Gets all the elements that have the specified CSS class applied to them</td>
+            </tr>
+            <tr>
+                <td><i>getElementByTagName</i></td>
+                <td>Gets all the elements of the page that have the specified tag name or element name</td>
+            </tr>
+            <tr>
+                <td><i>querySelector</i></td>
+                <td>Gets the first child element found that matches the provided CSS selector criteria</td>
+            </tr>
+            <tr>
+                <td><i>querySelectorAll</i></td>
+                <td>Gets all the child elements that match the provided CSS selector criteria</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>to demonstrate the functionality of accessing elements through code we need and entry pont.</p>
+    <p>first we add the script in the head block section in the webpage.<br>
+        window.onload essentially tells the runtime to run the code after the window finishes loading.<br></p>
+
+    <p> &lt;script&gt; <br>
+    window.onload = function() { <br>
+        .... <br>
+    }<br>
+    &lt;/script&gt;</p>
+
+    <p>The <i>getElementById </i> method returns the element in the page that matches the specific ID value you pass to it.<br>
+    It returns null if no element on the page hs a specified ID. If we wanted to reverence the <i>div></i> element with the <br>
+    ID <i>outerDiv</i>, you would use the following code:<br><br>
+    var element = document.getElementById("outerDiv");<br>
+    alert(element.innerHTML);
+    </p>
+
+    <p>So this code below should first run the script which should display the div with the id of outerDiv in an alert<br>
+    then after continuing should load the rest of the page. </p>
+
+    <p> &lt;script&gt; <br>
+        window.onload = function() { <br>
+            var elementVarNameIMadeUp = document.getElementById("outerDiv");<br>
+            alert(elementVarNameIMadeUp.innerHTML); <br>
+        }<br>
+        &lt;/script&gt;</p>
+
+    <p>&lt;/head&gt;</p>
+
+    <p>&lt;body><br>
+            &lt;div id="outerDiv"> <br>
+            &lt;h1>&lt;strong>TEST&lt;/strong>&lt;/h1><br>
+            &lt;/div><br>
+            &lt;/body><br>
+            &lt;/html>
+    </p>
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- This is where the page content goes -->
+
+    <br>
+    <p>Press Ctrl+U to see HTML page source</p>
+    <br>
+
+    <article> <strong>article</strong> tag Defines sef-contained areas on the page</article>
+    <aside> <strong>aside</strong> tag Defines smaller content areas outside the flow of a webpage</aside>
+    <figcaption> <strong>figcaption</strong> tag Defines the caption of a figure element</figcaption>
+    <figure> <strong>figure</strong> tag Defines content that contains a figure, such as an image, chart, or picture</figure>
+    <footer> <strong>footer</strong> tag Defines the bottom of a section or page</footer>
+    <header> <strong>header</strong> tag Defines the top of a section or page</header>
+    <hgroup> <strong>hgroup</strong> tag Defines a group of headings (H1-H6 elements)</hgroup>
+    <mark> <strong>mark</strong> tag Defines text that should be highlighted</mark>
+    <section> <strong>section</strong> tag Defines the distinct content of a document</section>
+    <nav> <strong>nav</strong> tag Defines navigation to other pages in the site</nav>
+    <p> <strong>Progress</strong> tag Defines the progress of the task</p>
+
+
+    <br><br>
+
+    <!--  &lt; and &gt; are for escaping out of HTML so that the code is shown to the user rather than proccesed by the browzer -->
+
+    <nav>A Navigation tag (nav) usually have &lt;a&gt; tags which creates a hyperlink to other web pages.
+
+        and will look like this.
+        <br><br>
+        &lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;
+
+        <br>
+
+        <p>Multiple links will look like this</p>
+
+        <a href="http://www.google.com">Google</a>
+        <a href="https://developer.mozilla.org/en-US/">Mozilla Web Docs</a>
+        <a href="https://www.w3schools.com/">w3schools </a>
+
+        <!-- https://www.w3schools.com/tags/tag_a.asp -->
+    </nav>
+
+    <br><br>
+    <p>A Progress tag will have a value attribute specifying what the current value is and a max attribute to set the
+        max possible value.</p>
+
+    <p>&lt;span&gt;0&lt;/span&gt;</p>
+    <p>&lt;progress value="21" max="100"&gt;&lt;/progress&gt;</p>
+    <p>&lt;span&gt;100&lt;/span&gt;</p>
+    <span>shows: &rarr;.... </span><span>0</span>
+    <progress value="21" max="100"></progress>
+    <span>100</span>
+    <p>(Note: using span will display it inline vs. with a paragraph tag which will indent)</p>
+
+    <p>Another example:</p>
+    <p>Data download is in progress, please wait patiently:</p>
+    <p>&lt;progress max="5"&gt;&lt;/progress&gt;</p>
+    <span>shows: &rarr;.... </span><progress max="5"></progress>
+
+    <br><br><br><br>
+
+    <p>A <strong>div</strong> element is a way to structure your pages and style them correctly by using ids</p>
+
+    <p>&lt;div id="pageHeader"&gt;&lt;/div&gt;</p>
+    <p>&lt;div id="LeftSide"&gt;&lt;/div&gt;</p>
+    <p>&lt;div id="RightSide"&gt;&lt;/div&gt;</p>
+    <p>&lt;div id="Footer"&gt;&lt;/div&gt;</p>
+
+    <p>Using a div element however is like a basic building block where you can assign ids however if you use the <br>
+        specific semantic elements then websites can fully leverage optimization for both search engines and screen
+        readers<br>
+        which will enable more accessibility and richer user experience. </p>
+
+</body>
+
+</html>

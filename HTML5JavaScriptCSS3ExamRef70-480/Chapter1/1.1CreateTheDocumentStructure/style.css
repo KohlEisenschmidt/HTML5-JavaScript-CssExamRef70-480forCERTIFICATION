@@ -1,0 +1,37 @@
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #404040;
+    color: aliceblue;
+}
+
+pre {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* mark {  
+    background-color: #404040;
+    color: orange;
+} */
+
+thead { 
+    border: 1px solid black; 
+     color: black;
+   }
+
+   /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.code {
+    grid-column: 1;
+}
+.explanation {
+    grid-column: 2;
+}
+.webDisplay {
+    grid-column: 3;
+}

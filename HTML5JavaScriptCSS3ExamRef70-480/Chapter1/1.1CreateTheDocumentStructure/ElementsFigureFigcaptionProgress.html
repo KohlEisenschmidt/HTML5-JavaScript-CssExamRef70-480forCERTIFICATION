@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500&display=swap" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+        <header style="text-align: right">Chapter 1</header>
+<header>
+    <h1><pre><span style="color:salmon">    &lt;Figure&gt;</span><span style="color:orange">  &lt;Figcaption&gt;</span><span style="color:lightseagreen">  &lt;progress&gt;</span>     elements           <a href="index.html#elements" style="color:springgreen">Back</a></pre></h1> 
+</header>
+<div class="wrapper">
+
+    <div class="code">  
+        <p style="text-align: center"><span style="color:lightseagreen">WHAT THE CODE LOOKS LIKE</span></p>   
+        <pre>
+
+&lt;body>
+    
+    &lt;article&gt;
+        &lt;header>
+            &lt;hgroup
+                &lt;h1>Our first new Article&lt;h1>
+            &lt;/hgroup>
+        &lt;/header>
+        &lt;section&gt;
+            &lt;h1>Section 1&lt;/h1>
+            &lt;p>Some details about section 1&lt;/p>
+            &lt;aside>Did you know that 7/10 is 70%&lt;/aside>
+        &lt;/section&gt;
+        &lt;section&gt;
+            &lt;h1>Section 2&lt;/h1>
+        &lt;/section&gt;
+    &lt;/article&gt;
+    &lt;article&gt;
+        &lt;header>
+            &lt;hgroup
+                &lt;h1>Second huge article&lt;h1>
+            &lt;/hgroup>
+        &lt;/header>
+        &lt;p>Provide some useful information in the article&lt;/p>
+    &lt;/article&gt;
+    &lt;article&gt;
+        &lt;header>
+            &lt;hgroup>
+                &lt;h1>Third huge article&lt;h1>
+            &lt;/hgroup>
+        &lt;/header>
+        &lt;p>Provide some useful information in the third article&lt;/p>
+        <span style="color:salmon">&lt;figure&gt;</span>
+            &lt;img src="orange.jpg" style="width:50px; height:50px;"/>
+            <span style="color:orange">&lt;figcaption>Fig 1: A really juicy orange.&lt;/figcaption></span>
+        <span style="color:salmon">&lt;/figure&gt;</span>
+        &lt;br>
+        &lt;p>Our goal is to have 1000 users:&lt;/p>
+        &lt;span>0&lt;/span>
+        <span style="color:lightseagreen">&lt;progress value="50" max="1000">&lt;/progress></span>
+        &lt;span>1000&lt;/span>
+        &lt;br>
+        &lt;p>Our goal is to have 1000 users:&lt;/p>
+        &lt;span>0&lt;/span>
+        <span style="color:lightseagreen">&lt;progress value="50" max="1000">&lt;/progress></span>
+        &lt;span>1000&lt;/span>
+    &lt;article&gt;
+&lt;/body>
+
+        </pre>  
+    </div>
+ <!---------------------------------------------------------------------------------------------------------------------->
+    <div class="explanation" style="color:paleturquoise">
+        <p>The <span style="color:salmon">figure</span> <span style="color:orange">figcaption</span> elements are semantic 
+             elements necessary for adding graphics and figures to webpages. 
+            </p>
+
+        <p>These graphics and figures typically provide a visual representation of information in the textual content and 
+            referenced by the text. Often you see such images in tutorials and text books in which the author directs the 
+            reader to a specific figure.  
+        </p>
+
+        
+
+        <p>The <span style="color:lightseagreen">progress</span> element represents progress of and object or task.the first 
+            element is a header or header group element followed by the <span style="color:lightseagreen">section</span> element
+        </p>
+
+        <p>The <span style="color:lightseagreen">progress</span> element has two attributes; <span style="font-style: italic;">value</span>
+             and <span style="font-style: italic;">max</span>. The <span style="font-style: italic;">value</span> attribute lets you 
+             specify the current value or position on the <span style="color:lightseagreen">progress</span>
+            element at a specific point in time. The <span style="font-style: italic;">max</span> attribute tells the browser 
+            what the maximum possible value is for the element. 
+         </p>
+
+        <p>The two supported types of progress tasks are <span style="font-style: italic;">determinate</span> and <span style="font-style: italic;">indeterminate</span>.
+            Here we hard-coded values which would be considered <span style="font-style: italic;">determinate</span> because we knew the 
+            information we wanted. Examples like this would be downloading a file where you knew the exact size or display the progress
+            of a fundraiser. 
+            A <span style="font-style: italic;">indeterminate</span> proggress task is usually assosiated by a CSS psoudo-class that may change 
+            how the progress bar is displayed.
+        </p>
+
+        <p>Usually the <span style="font-style: italic;">value</span> attribute updates dynamically using JavaScript.
+         </p>       
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------------------------->
+    <div class="webDisplay">
+            <p style="text-align: center"><span style="color:lightseagreen;">WHAT THE WEBPAGE LOOKS LIKE</span></p>  
+        <article>
+            <header>
+                <h1>Our first new Article</h1>
+            </header>
+            <section>
+                <h1>Section 1</h1>
+                <p>Some details about the section 1</p>
+                <aside>Did you know that 7/10 is 70%</aside>
+            </section>
+            <section>
+                <h1>Section 2</h1>
+            </section>
+        </article>
+        <article>
+            <header>
+                <hgroup>
+                    <h1>Second huge article</h1>
+                </hgroup>
+            </header>
+            <p>Provide some useful information in the article</p>
+        </article>
+        <article>
+            <header>
+                <hgroup>
+                    <h1>Third huge article</h1>
+                </hgroup>
+            </header>
+            <p>Provide some useful information in the third article</p>
+
+            <figure style="outline-color:salmon; outline-style: solid">
+                <img src="orange.jpg" style="width: 50px; height: 50px;"/>
+                <figcaption style="color:orange;">Fig 1: A really juicy orange.</figcaption>
+            </figure>
+
+            <br>
+
+            <p>Our goal is to have 1000 users:</p>
+            <span>0</span>
+            <progress style="outline-color:lightseagreen; outline-style: solid" value="50" max="1000"></progress>
+            <span>1000</span>
+
+            <br><br>
+
+            <span>0</span>
+            <progress style="outline-color:lightseagreen; outline-style: solid" value="750" max="1000"></progress>
+            <span>1000</span>
+
+        </article>
+        
+        
+    </div>
+    
+</div>
+<h1><a href="index.html#elements" style="color:springgreen">Back</a></h1>
+<br>
+<br>
+</body>
+
+</html>

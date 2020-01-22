@@ -17,7 +17,7 @@
 <body>
         <header style="text-align: right">Chapter 1</header>
 <header>
-    <h1><pre><span style="color:salmon">    &lt;Figure&gt;</span><span style="color:orange">  &lt;Figcaption&gt;</span><span style="color:lightseagreen">  &lt;progress&gt;</span>     elements           <a href="index.html#elements" style="color:springgreen">Back</a></pre></h1> 
+    <h1><pre><span style="color:salmon">&lt;Figure&gt;</span><span style="color:orange"> &lt;Figcaption&gt;</span><span style="color:lightseagreen"> &lt;progress&gt;</span><span style="color:rgb(167, 23, 23)"> &lt;Mark&gt;</span>     elements           <a href="index.html#elements" style="color:springgreen">Back</a></pre></h1> 
 </header>
 <div class="wrapper">
 
@@ -71,6 +71,13 @@
         &lt;span>0&lt;/span>
         <span style="color:lightseagreen">&lt;progress value="50" max="1000">&lt;/progress></span>
         &lt;span>1000&lt;/span>
+        &lt;br>&lt;br>
+        &lt;p>Data download is in progress, please wait patiently:&lt;/p>
+        <span style="color:lightseagreen">&lt;progress max="5">&lt;/progress></span>
+        &lt;br>&lt;br>
+        &lt;p>Some very <span style="color:rgb(167, 23, 23)">&lt;mark> style="background-color: 
+            rgb(167, 23, 23);">important&lt;/mark></span> 
+            information provided here!&lt;/p>
     &lt;article&gt;
 &lt;/body>
 
@@ -104,12 +111,18 @@
             Here we hard-coded values which would be considered <span style="font-style: italic;">determinate</span> because we knew the 
             information we wanted. Examples like this would be downloading a file where you knew the exact size or display the progress
             of a fundraiser. 
-            A <span style="font-style: italic;">indeterminate</span> proggress task is usually assosiated by a CSS psoudo-class that may change 
+            A <span style="font-style: italic;">indeterminate</span> progress task is when you don't know how long the process should 
+            take but want to show the users that some work is occurring and that they should wait. This might be useful when you
+            have no control or knowledge of how quickly a request will complete. To do this you remove the 
+            <span style="font-style: italic;">value</span> attribute within your progress element. Indeterminate tasks are often
+            associated by a CSS pseudo-class that may change 
             how the progress bar is displayed.
+            Usually the <span style="font-style: italic;">value</span> attribute updates dynamically using JavaScript.
+         </p> 
+        
+        <p>The <span style="color:rgb(167, 23, 23)">Mark</span> element is used to easily highlight important information
+             which functions the same as a highlighter.
         </p>
-
-        <p>Usually the <span style="font-style: italic;">value</span> attribute updates dynamically using JavaScript.
-         </p>       
     </div>
 
     <!------------------------------------------------------------------------------------------------------------------------------->
@@ -161,6 +174,15 @@
             <span>0</span>
             <progress style="outline-color:lightseagreen; outline-style: solid" value="750" max="1000"></progress>
             <span>1000</span>
+
+            <br><br><br>
+            
+            <p>Data download is in progress, please wait patiently:</p>
+            <progress style="outline-color:lightseagreen; outline-style: solid" max="5"></progress>
+
+            <br><br><br>
+
+            <p>Some very <mark style="background-color: rgb(167, 23, 23);">important</mark> information provided here!</p>
 
         </article>
         

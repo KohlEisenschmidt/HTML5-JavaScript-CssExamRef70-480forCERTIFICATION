@@ -17,7 +17,7 @@
 <body>
         <header style="text-align: right">Chapter 1</header>
 <header>
-    <h1><pre><span style="color:salmon">    &lt;header&gt;</span>   <span style="color:orange">&lt;footer&gt; </span>       elements                       <a href="index.html#elements" style="color:springgreen">Back</a></pre></h1> 
+    <h1><pre><span style="color:salmon">    &lt;header&gt;</span>   <span style="color:orange">&lt;footer&gt;   <span style="color:rgb(167, 23, 23)">&lt;div></span></span>     elements                  <a href="index.html#elements" style="color:springgreen">Back</a></pre></h1> 
 </header>
 <div class="wrapper">
 
@@ -45,7 +45,7 @@
             &lt;hgroup>
                 &lt;h1>Our first new Article&lt;/h1>
             &lt;/hgroup>
-        <span style="color:salmon">&lt;header></span>
+        <span style="color:salmon">&lt;/header></span>
             &lt;section>
                 &lt;h1>Section 1&lt;/h1>
                 &lt;p>Some details about section 1&lt;/p>
@@ -55,19 +55,28 @@
                 &lt;h1>Section 2&lt;/h1>
             &lt;/section>
         &lt;/article>
-        &lt;article>
-            <span style="color:salmon">&lt;header></span>
-                &lt;hgroup>
-                    &lt;h1>Second huge article&lt;/h1>
-                &lt;/hgroup>
-            <span style="color:salmon">&lt;header></span>
-        &lt;/article>
+        <span style="color:rgb(167, 23, 23)">&lt;div></span>
+            <span style="color:rgb(167, 23, 23)">&lt;div></span>
+                &lt;h1>Second huge article&lt;/h1>
+            <span style="color:rgb(167, 23, 23)">&lt;/div></span>
+            <span style="color:rgb(167, 23, 23)">&lt;div></span>
+                &lt;h1>Section 1&lt;/h1>
+                &lt;p>Some details about section 1&lt;/p>
+                &lt;aside>Did you kow that 7/10 is 70%&lt;/aside>
+            <span style="color:rgb(167, 23, 23)">&lt;/div></span>
+            <span style="color:rgb(167, 23, 23)">&lt;div></span>
+                &lt;h1>Section 2&lt;/h1>
+            <span style="color:rgb(167, 23, 23)">&lt;/div></span>
+        <span style="color:rgb(167, 23, 23)">&lt;/div></span>
+        
+
+
         &lt;article>
             <span style="color:salmon">&lt;header></span>
                 &lt;hgroup>
                     &lt;h1>Third huge article&lt;/h1>
                 &lt;/hgroup>
-            <span style="color:salmon">&lt;header></span>
+            <span style="color:salmon">&lt;/header></span>
             &lt;p>Provide some useful information 
                 in the third article&lt;/p>
             &lt;figure>
@@ -103,6 +112,11 @@
               to any area of the webpage like a section or a article. The header element is 
               intended to hold H1-H6, however you can populate it with anything needed. 
         </p>
+        <p>A <span style="color:rgb(167, 23, 23)">Div</span> element is the older method for structuring
+            pages and can still be quite useful. The new (other) elements (with the exception of the progress element)
+            now available in HTML5 have a more stronger semantic definition and may be more reliable and 
+            maintainable way to structure your web pages. 
+       </p>
     </div>
 
     <div class="webDisp">
@@ -130,12 +144,20 @@
                 <h1>Section 2</h1>
             </section>
         </article>
-        <article>
-            <header>
+        <article style="outline-color:rgb(167, 23, 23); outline-style: solid; padding: 5px">
+            <header style="outline-color:rgb(167, 23, 23); outline-style: solid">
                 <hgroup>
                     <h1>Second huge article</h1>
                 </hgroup>
             </header>
+            <div style="outline-color:rgb(167, 23, 23); outline-style: solid">
+                <h1>Section 1</h1>
+                <p>Some details about section 1</p>
+                <aside>Did you kow that 7/10 is 70%</aside>
+            </div>
+            <div style="outline-color:rgb(167, 23, 23); outline-style: solid">
+                <h1>Section 2</h1>
+            </div>
         </article>
         <article>
             <header>

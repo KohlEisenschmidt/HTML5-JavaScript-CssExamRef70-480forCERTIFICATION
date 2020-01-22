@@ -21,7 +21,7 @@
     a webpage by either pressing</p>
     <br>
     <!-- <pre></pre> element is Preformatted text that preserves both spaces and line breaks however changes the format
-    If waiting to look like the rest of the text you'll have to redefine <pre> in your CSS stiles sheets -->
+    If waiting to look like the rest of the text you'll have to redefine <p> in your CSS stiles sheets -->
     <pre><mark>Ctrl+U</mark>             to see HTML page source (the code in a new tab)</pre>
     <!-- <mark> element defines highlighted text that can also be modified in CSS-->
     <br>
@@ -64,10 +64,16 @@
         </thead>
         <tbody>
             <tr>
-                <td><a href="ElementsArticleSectionAside.html" style="color:red">&lt;article&gt;</td>
+                <td><a href="ElementsHeaderFooterDiv.html   " style="color:red">&lt;div&gt;</td>
                     <!-- &lt;<span style="color:red">article</span>&gt; -->
                     <!-- <span> element is used to color a part of the text-->
                 <td>Defines self-contained areas on a page</td>
+            </tr>
+            <tr>
+                <td><a href="ElementsArticleSectionAside.html" style="color:red">&lt;article&gt;</td>
+                    <!-- &lt;<span style="color:red">article</span>&gt; -->
+                    <!-- <span> element is used to color a part of the text-->
+                <td>Defines a whole and complete composition or entry.</td>
             </tr>
             <tr>
                 <td><a href="ElementsArticleSectionAside.html" style="color:red">&lt;aside&gt;</td>
@@ -78,15 +84,15 @@
                 <td>Defines the caption of a figure element</td>
             </tr>
             <tr>
-                <td><a href="ElementsFigureFigcaptionProgress.html" style="color:red">&lt;figure&gt;</td>
+                <td><a href="ElementsFigureFigcaptionProgressMark.html" style="color:red">&lt;figure&gt;</td>
                 <td>Defines contents that contains a figure, such as an image, chart, or picture</td>
             </tr>
             <tr>
-                <td><a href="ElementsHeaderFooter.html" style="color:red">&lt;footer&gt;</td>
+                <td><a href="ElementsHeaderFooterDiv.html" style="color:red">&lt;footer&gt;</td>
                 <td>Defines the bottom section or page</td>
             </tr>
             <tr>
-                <td><a href="ElementsHeaderFooter.html" style="color:red">&lt;header&gt;</td>
+                <td><a href="ElementsHeaderFooterDiv.html" style="color:red">&lt;header&gt;</td>
                 <td>Defines the top section of page</td>
             </tr>
             <tr>
@@ -94,7 +100,7 @@
                 <td>Defines a group of headings (H1-H6 elements)</td>
             </tr>
             <tr>
-                <td>&lt;<span style="color:red">mark</span>&gt;</td>
+                <td><a href="ElementsFigureFigcaptionProgressMark.html" style="color:red">&lt;Mark&gt;</td>
                 <td>Defines text that should be highlighted</td>
             </tr>
             <tr>
@@ -102,7 +108,7 @@
                 <td>Defines navigation to other pages in the site</td>
             </tr>
             <tr>
-                <td><a href="ElementsFigureFigcaptionProgress.html" style="color:red">&lt;progress&gt;</td>
+                <td><a href="ElementsFigureFigcaptionProgressMark.html" style="color:red">&lt;progress&gt;</td>
                 <td>Defines the progress of a task</td>
             </tr>
             <tr>
@@ -111,7 +117,42 @@
             </tr>
     </tbody>
     </table>
-
+    <br>
+    <p>It is important to give serious thought to the layout of your webpage so that your page is user friendly.
+        If the entire page is styled as a single P element inside the body element, users might not come back
+        due to them not being able to find what they are looking for. 
+    </p>
+    <p>The two most common methods to creating a layout in HTML5 using the div or table elements.</p>
+    <pre>
+    <p>Div element layout method</p>   
+        &lt;div id="PageHeader">&lt;/div>
+        &lt;div id="LeftSide">&lt;/div>
+        &lt;div id="RightSide">&lt;/div>
+        &lt;div id="Footer">&lt;/div>
+    <p>Table element layout method(Iv never seen used before)</p>
+        &lt;table>
+            &lt;tr>
+                &lt;td colspan="3" id="Header">&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td rowspan="3" id="LeftBar">&lt;/td>
+                &lt;td rowspan="3" id="MainContent">&lt;/td>
+                &lt;div id="RightSideTop">&lt;/div>
+            &lt;/tr>
+            &lt;tr>
+                &lt;div id="RightSideMiddle">&lt;/div>
+            &lt;/tr>
+            &lt;tr>
+                &lt;div id="RightSideBottom">&lt;/div>
+            &lt;/tr>
+            &lt;tr>
+                &lt;td colspan="3" id="Footer">&lt;/td> 
+            &lt;/tr>
+        &lt;/table>
+    </pre> 
+    <p>Additionally using thead and tfoot elements can be used to provide 
+        a more semantic approach for labeling the cells.
+        The concern using a table is its static nature of the structure.     </p>
     <br>
     <br>
     <br>

@@ -12,27 +12,38 @@
     <script src="main.js"></script>
 </head>
 
-<body>
+<body id="MainPage">
     <!-- This is where the page content goes-->
 
     <header style="text-align: right">Chapter 1</header>
     <br>
+    <h1>Beginning Basics</h1>
+    <br>
+    <h4>Handy Tools to Start with</h4>
     <p>When using a web browser you can view the code that makes up 
     a webpage by either pressing</p>
     <br>
     <!-- <pre></pre> element is Preformatted text that preserves both spaces and line breaks however changes the format
     If waiting to look like the rest of the text you'll have to redefine <p> in your CSS stiles sheets -->
-    <pre><mark>Ctrl+U</mark>             to see HTML page source (the code in a new tab)</pre>
+    <div><pre><mark>Ctrl+U</mark>             To see HTML page source (the code in a new tab)</pre></div>
     <!-- <mark> element defines highlighted text that can also be modified in CSS-->
     <br>
-    <pre><mark>Ctrl+Shift+I</mark>       when in the CHROME browser to load Chrome Developer tools 
+    <pre class="helpers"><mark>Ctrl+Shift+I</mark>       When in the CHROME browser to load Chrome Developer tools 
                    where you can view and safely manipulate the webpage in a side editor</pre>
     <br>
+    <pre><mark>Alt+B</mark>             Visual  Studio Code program will load and desplay the code in a Chrome web browser.</pre>
+    <br>
+    <pre><mark>Ctrl+R</mark>            To reload the webpage in your Chrome web browser.</pre>
+    <br>
+    <pre><mark>Alt+Tab</mark>           To scroll through your program windows. </pre>
+    <br>
+<pre><mark>Ctrl+Tag or Ctrl+Shift+Tag</mark>            To scroll through program tabs.</pre>
+    <br>
 
     <br>
     <br>
 
-    <pre>Hypertext Markup Language   HTML   is make up of tags/elements to create the structure of a webpage</pre>
+    <pre style="font-weight: bold">Hypertext Markup Language   HTML   is make up of Tags/Elements to create the structure of a webpage</pre>
     <br>
 
     <p>The following code demonstrates the basic template of and HTML5 page.</p>
@@ -53,7 +64,7 @@
     </pre>
     <br>
 
-    <p id="elements">These elements make up the core of HTML5</p>
+    <h3 id="elements">These elements make up the core of HTML5</h3>
 
     <table border="1">
         <thead>
@@ -118,11 +129,12 @@
     </tbody>
     </table>
     <br>
+    <h2>Layout</h2>
     <p>It is important to give serious thought to the layout of your webpage so that your page is user friendly.
         If the entire page is styled as a single P element inside the body element, users might not come back
         due to them not being able to find what they are looking for. 
     </p>
-    <p>The two most common methods to creating a layout in HTML5 using the div or table elements.</p>
+    <p>The two most common methods to creating a layout in HTML5 using the Div or Table elements.</p>
     <pre>
     <p>Div element layout method</p>   
         &lt;div id="PageHeader">&lt;/div>
@@ -152,7 +164,44 @@
     </pre> 
     <p>Additionally using thead and tfoot elements can be used to provide 
         a more semantic approach for labeling the cells.
-        The concern using a table is its static nature of the structure.     </p>
+        The concern using a table is its static nature of the structure.     
+    </p>
+    <br>
+    <br>
+    <h2>Optimizing for search engines and screen readers</h2>
+    <p>In the past (pre-HTML5) web designers predominantly used Div elements to structure a page. 
+        Today, there is a growing field for methodologies concerning layouts called 
+        Search Engine Optimization (SEO). When search engines search the internet they scour 
+        webpages for content so the user can receive relevant results. Search engines look through
+        a web pages HTML and index content such as page and image metadata. There is a relationship then
+        with the content on a website and how easily a user is able to find the website. With better 
+        descriptive elements using semantic markup a website can more easily be found by a user. 
+    </p>
+    <p>Another reason to carefully construct your layout using semantic markup is for screen readers. 
+        Screen-reader programs use text-to-speech algorithms that read aloud text on a page. This could 
+        be helpful for users who have difficulty viewing the webpage. Prior to HTML5 only the header elements
+        (H1-H6) outlined a page and created a hierarchy for screen readers to use to present a table 
+        of contents to the user.
+    </p>
+    <pre>
+        &lt;h1>Fruits and Vegetables>&lt;/h1>
+        &lt;h2>Fruits>&lt;/h2>
+        &lt;h3>Apple>&lt;/h3>
+        &lt;h3>Orange>&lt;/h3>
+    </pre>
+    <p> With the use of semantic elements the document outline is changed and now each semantic element
+         is considered a section that can house the original hierarchy header elements for screen readers. 
+        This intern will then make the webpage more defined and give more information to the Screen-reader
+        for a better user experience. </p>
+    <pre>
+        &lt;section>
+            &lt;h1>Fruits and Vegetables>&lt;/h1>
+            &lt;section>
+                &lt;h1>Fruits>&lt;/h1>
+                &lt;section>
+                    &lt;h1>Apple>&lt;/h1>
+                    &lt;h1>Orange>&lt;/h1>
+    </pre>
     <br>
     <br>
     <br>

@@ -1,3 +1,11 @@
+#MainPage {
+    padding: 25px 25px 25px 25px;
+    padding-left: 50px;
+  
+}
+#MainPage, pre {
+    margin: 0px;
+}
 
 body {
     font-family: 'Roboto Mono', monospace;
@@ -35,3 +43,6 @@ thead {
 .webDisplay {
     grid-column: 3;
 }
+/* mark {
+    padding-bottom: 0px;
+} */
